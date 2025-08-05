@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime
  
-log_file = Path.home("web-monitor-structured-log.txt")
+log_file = Path("web-monitor-structured-log.txt")
  
 st.set_page_config(page_title="Website Monitoring Dashboard", layout="wide")
 st.title("📶 Website Monitoring Dashboard")
