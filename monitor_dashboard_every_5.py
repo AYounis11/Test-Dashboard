@@ -7,7 +7,7 @@ def check_password():
     if not st.session_state["password_correct"]:
         pwd = st.text_input("Enter password:", type="password")
         if st.button("Submit"):
-            if pwd == st.secrets.auth.password:
+            if "auth" in st.secrets and pwd == st.secrets.auth.password:
                 st.session_state["password_correct"] = True
                 st.experimental_rerun()
             else:
