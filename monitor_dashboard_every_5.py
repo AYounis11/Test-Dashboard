@@ -19,7 +19,7 @@ def check_password():
  
 check_password()
   
-st.write("Welcome! You have access to the dashboard.")
+st.success("🎉 Access granted! Welcome to the test dashboard.")
 
 from pathlib import Path
 import pandas as pd
@@ -30,7 +30,7 @@ log_file = Path("web-monitor-structured-log.txt")
 st.set_page_config(page_title="Website Monitoring Dashboard", layout="wide")
 st.title("📶 Website Monitoring Dashboard")
 st.markdown("Each monitored website has its own latency and TTL graph.")
-st.markdown("🔄 Auto-refreshes every 30 seconds")
+st.markdown("🔄 Auto-refreshes every 60 seconds")
  
 # Auto-refresh
 st.markdown("""
