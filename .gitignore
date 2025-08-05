@@ -1,0 +1,15 @@
+
+# Ignore Streamlit secrets
+.streamlit/secrets.toml
+
+# Ignore log files
+web-monitor-structured-log.txt
+*.txt
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore OS junk
+.DS_Store
+Thumbs.db
