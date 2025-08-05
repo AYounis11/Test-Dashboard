@@ -1,5 +1,4 @@
-import streamlit as st
- 
+
 def check_password():
     def password_entered():
         if st.session_state["password_input"] == st.secrets.get("auth", {}).get("password"):
@@ -17,13 +16,16 @@ def check_password():
             st.error("❌ Incorrect password")
         st.stop()
  
-check_password()
-  
-st.success("🎉 Access granted! Welcome to the test dashboard.")
 
+
+import streamlit as st
 from pathlib import Path
 import pandas as pd
 from datetime import datetime
+
+check_password()
+  
+st.success("🎉 Access granted! Welcome to the test dashboard.")
  
 log_file = Path("web-monitor-structured-log.txt")
  
