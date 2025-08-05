@@ -3,7 +3,6 @@
 .streamlit/secrets.toml
 
 # Ignore log files
-# web-monitor-structured-log.txt
 *.log
 
 # Ignore Python cache
