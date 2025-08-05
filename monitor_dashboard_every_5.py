@@ -22,7 +22,6 @@ st.write("Welcome! You have access to the dashboard.")
 
 from pathlib import Path
 import pandas as pd
-import streamlit as st
 from datetime import datetime
  
 log_file = Path("web-monitor-structured-log.txt")
